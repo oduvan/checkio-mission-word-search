@@ -1,16 +1,16 @@
-def sum_two(a, b):
-    """
-        sums two passed arguments
-    """
+def word_search(a, b):
     # your code here
     return None
 
 
 if __name__ == '__main__':
     print("Example:")
-    print(sum_two(3, 2))
-    
+    print(word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF"))
+
     # These "asserts" are used for self-checking and not for an auto-testing
-    assert sum_two(3, 2) == 5, "First"
-    assert sum_two(5, 7) == 12, "Second"
+    assert word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
+    assert word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
+    assert word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "A") == true
+    assert word_search([["G", "F", "E", "E"], ["L", "A", "B", "A"], ["F", "D", "R", "W"]], "BEE") == true
+    assert word_search([["G", "F", "E", "E"], ["L", "A", "B", "A"], ["F", "D", "R", "W"]], "ABBA") == false
     print("Coding complete? Click 'Check' to earn cool rewards!")

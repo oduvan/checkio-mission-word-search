@@ -7,30 +7,50 @@ Each test is a dict with
     "explanation" -- not necessarily a key, it's used for an additional info in animation.
 """
 
+LETTERS_1 = [
+    list('ABCD'),
+    list('EFGH'),
+    list('IJKL')
+]
+
+LETTERS_2 = [
+    list('GFEE'),
+    list('LABA'),
+    list('FDRW')
+]
+
 
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": [LETTERS_1, 'BAEF'],
+            "answer": True
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
+            "input": [LETTERS_1, 'ABCDE'],
+            "answer": False
+        },
+        {
+            "input": [LETTERS_1, 'A'],
+            "answer": True
+        },
+        {
+            "input": [LETTERS_2, 'BEE'],
+            "answer": True
+        },
+        {
+            "input": [LETTERS_2, 'ABBA'],
+            "answer": False
         }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [LETTERS_1, 'W'],
+            "answer": False
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": [LETTERS_2, 'GLF'],
+            "answer": True
+        },
     ]
 }

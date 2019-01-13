@@ -1,0 +1,36 @@
+<!-- Describe task in general -->
+
+<p>
+    Дана карта букв, в видем массива массивов и вам надо определить, можно ли используя эту карту построить слово?
+</p>
+
+<p>Слово может строится только по буквам, которые прилягают друг к другу в этой карте. И должны идти в том порядке в котором они идут в совственно карте</p>
+
+
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Два аргумента. Один - это карта букв в виде массива массивов. Второй - это слово, которые мы ищем.
+</p>
+
+<p>
+    <strong>Output: </strong> Булеан. Можно ли построить слово используя эту карту.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
+wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
+</pre>
+{% else %}
+<pre class="brush: python">word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
+word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
+</pre>
+{% endif %}
+</div>

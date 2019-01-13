@@ -25,12 +25,12 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumTwo(2, 3) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
+wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(2, 3) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
+word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
 </pre>
 {% endif %}
 </div>

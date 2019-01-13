@@ -1,19 +1,23 @@
 "use strict";
 
-function sumTwo(a, b) {
-    // sums two passed arguments
+function wordSearch(a, b) {
 
     // your code here
-    return 0;
+    return undefined;
 }
 
 var assert = require('assert');
 if (!global.is_checking) {
     console.log('Example:');
-    console.log(sumTwo(3, 2));
+    console.log(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF"));
 
     // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(sumTwo(3, 2), 5);
-    assert.equal(sumTwo(5, 7), 12);
+    assert.equal(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF"), true);
+    assert.equal(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE"), false);
+    assert.equal(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "A"), true);
+    assert.equal(wordSearch([["G", "F", "E", "E"], ["L", "A", "B", "A"], ["F", "D", "R", "W"]], "BEE"), true);
+    assert.equal(wordSearch([["G", "F", "E", "E"], ["L", "A", "B", "A"], ["F", "D", "R", "W"]], "ABBA"), false);
+
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
+    
