@@ -9,14 +9,32 @@ function wordSearch(a, b) {
 var assert = require('assert');
 if (!global.is_checking) {
     console.log('Example:');
-    console.log(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF"));
+    console.log(wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'BAEF'));
 
     // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF"), true);
-    assert.equal(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE"), false);
-    assert.equal(wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "A"), true);
-    assert.equal(wordSearch([["G", "F", "E", "E"], ["L", "A", "B", "A"], ["F", "D", "R", "W"]], "BEE"), true);
-    assert.equal(wordSearch([["G", "F", "E", "E"], ["L", "A", "B", "A"], ["F", "D", "R", "W"]], "ABBA"), false);
+    assert.equal(wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'BAEF'), true);
+    assert.equal(wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'ABCDE'), false);
+    assert.equal(wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'A'), true);
+    assert.equal(wordSearch([['G', 'F', 'E', 'E'],
+  ['L', 'A', 'B', 'A'],
+  ['F', 'D', 'R', 'W']],
+ 'BEE'), true);
+    assert.equal(wordSearch([['G', 'F', 'E', 'E'],
+  ['L', 'A', 'B', 'A'],
+  ['F', 'D', 'R', 'W']],
+ 'ABBA'), false);
 
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }

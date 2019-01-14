@@ -6,7 +6,9 @@
 
 <p>The word can be built only from letters that are adjacent to each other in this map. Also, these letters must go in the order in which they go in the same given map.</p>
 
-
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}example.png" style="max-height: 380px">
+</div>
 
 <!-- Explain input and output values -->
 <p>
@@ -25,12 +27,24 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
-wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
+<pre class="brush: javascript">wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'BAEF') == true
+wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'ABCDE') == false
 </pre>
 {% else %}
-<pre class="brush: python">word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
-word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
+<pre class="brush: python">word_search([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'BAEF') == True
+word_search([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'ABCDE') == False
 </pre>
 {% endif %}
 </div>

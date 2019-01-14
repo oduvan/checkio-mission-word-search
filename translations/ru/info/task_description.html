@@ -7,6 +7,11 @@
 <p>Слово может строится только из букв, которые прилегают друг к другу в этой карте. Также эти буквы должны идти в том порядке, в котором они идут в собственно карте</p>
 
 
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}example.png" style="max-height: 380px">
+</div>
+
+
 
 <!-- Explain input and output values -->
 <p>
@@ -25,12 +30,24 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
-wordSearch([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
+<pre class="brush: javascript">wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'BAEF') == true
+wordSearch([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'ABCDE') == false
 </pre>
 {% else %}
-<pre class="brush: python">word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "BAEF") == true
-word_search([["A", "B", "C", "D"], ["E", "F", "G", "H"], ["I", "J", "K", "L"]], "ABCDE") == false
+<pre class="brush: python">word_search([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'BAEF') == True
+word_search([['A', 'B', 'C', 'D'],
+  ['E', 'F', 'G', 'H'],
+  ['I', 'J', 'K', 'L']],
+ 'ABCDE') == False
 </pre>
 {% endif %}
 </div>
